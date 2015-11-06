@@ -107,5 +107,14 @@ namespace Ejercicio1
                       select s;
             dbgrid.ItemsSource = reg.ToList();
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            Departamento dep = new Departamento();
+            dep.Nombre = nombre.Text;
+            db.Departamentos.Add(dep);
+            db.SaveChanges();
+        }
     }
 }
