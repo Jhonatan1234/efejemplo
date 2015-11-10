@@ -116,5 +116,18 @@ namespace Ejercicio1
             db.Departamentos.Add(dep);
             db.SaveChanges();
         }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            cbdepartamento.ItemsSource = db.Departamentos.ToList();
+            cbdepartamento.DisplayMemberPath = "Nombre";
+            cbdepartamento.SelectedValuePath = "id";
+        }
     }
 }
