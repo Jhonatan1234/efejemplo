@@ -85,6 +85,10 @@
     <Compile Include="Migrations\201511061549380_deps.Designer.cs">
       <DependentUpon>201511061549380_deps.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511111558015_correciondeps.cs" />
+    <Compile Include="Migrations\201511111558015_correciondeps.Designer.cs">
+      <DependentUpon>201511111558015_correciondeps.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511061549380_deps.resx">
       <DependentUpon>201511061549380_deps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511111558015_correciondeps.resx">
+      <DependentUpon>201511111558015_correciondeps.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
